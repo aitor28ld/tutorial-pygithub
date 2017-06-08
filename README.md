@@ -20,6 +20,10 @@
 3. [Atributos GET](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributos-get)
 	1. [Atributo api_status](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-api_status)
 	2. [Atributo emojis](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-emojis)
+	3. [Atributo user](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-user)
+	4. [Atributo search](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-search)
+		1. [Search users](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#search-users)
+		2. [Search repositories](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#search-repositories)
 
 # ¿Qué es PyGithub?
 
@@ -49,6 +53,8 @@ Con ello, ya podemos ejecutar cualquier aplicación.
 
 # Atributos GET
 
+Los siguientes atributos son los únicos que pueden/podrán ser utilizados para el desarrollo de una aplicación.
+
 ## Atributo api_status
 
 El atributo _api\_status_ contiene estos atributos:
@@ -76,3 +82,48 @@ Este atributo contiene todos los emoticonos que Github permite insertar en cualq
 Su contenido se guarda en un diccionario y posee los  métodos correspondientes a un [diccionario en Python](http://librosweb.es/libro/algoritmos_python/capitulo_9/utilizando_diccionarios_en_python.html).
 
 Podemos ver algunos ejemplos en el siguiente [fichero](https://github.com/aitor28ld/tutorial-pygithub/blob/master/tutorial-emojis.py)
+
+## Atributo user
+
+Este es el atributo con el que mayormente trabajaremos si desarrollamos una aplicación porque contiene muchos métodos sencillos y útiles.
+
+Es el atributo que más métodos y submétodos tiene. Podemos ver todos los submétodos con la ayuda de la aplicación ``ipython`` y definiendo las siguientes variables:
+
+	from github import Github
+	g = Github('<usuario>','<password>')
+	p = g.get_user()
+
+Tecleamos la variable ``p`` acompañada de un punto y pulsamos TAB para verlos todos.
+
+Si queremos ver algún otro submétodo, deberemos seguir ese esquema, es decir:
+
+1. Definimos una variable con el primer método
+2. Vemos los submétodos de la variable anteriormente definida
+3. Mostramos/usamos el submétodo
+
+[Aquí](https://github.com/aitor28ld/tutorial-pygithub/blob/master/tutorial-get_user.py) tenemos ejemplos de uso.
+
+## Atributo search
+
+Con este atributo podemos realizar búsquedas de usuarios y repositorios ya existentes. Tenemos dos tipos:
+
+### Search users
+
+Este atributo en realidad es una lista actualizada con todos los usuarios actualmente registrados en Github.
+
+Un ejemplo de uso podría ser:
+
+	p = g.search_users('<usuario a buscar>')
+	for x in p:
+		for m in x.get_repos():
+			print m.name
+
+### Search repositories
+
+Al igual que pasa con el atributo anterior, este también es un a lista actualizada con todos los repositorios creados y existentes actualmente en Github.
+
+Un ejemplo de uso para buscar un repositorio sería:
+
+	p = g.search_repositories('<nombre del repositorio>')
+	for x in p:
+		print x.name

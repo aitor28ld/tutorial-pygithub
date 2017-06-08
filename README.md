@@ -16,7 +16,7 @@
 
 # Índice
 1. [¿Qué es PyGithub?](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#qu%C3%A9-es-pygithub)
-2. [Descarga e instalación de la librería](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#descarga-e-instalaci%C3%B3n-de-la-liber%C3%ADa)
+2. [Descarga e instalación de la librería](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#descarga-e-instalaci%C3%B3n-de-la-librer%C3%ADa)
 3. [Atributos GET](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributos-get)
 	1. [Atributo api_status](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-api_status)
 	2. [Atributo emojis](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-emojis)
@@ -33,7 +33,7 @@ Desafortunadamente, PyGithub no dispone de mucha [documentación](http://pygithu
 
 De todas formas, su uso es intuitivo y fácil para aquel que haya trabajado minimamente con alguna librería anteriormente. Si tenemos el paquete Ipython instalado en nuestro sistema, podremos acceder a todos los métodos que nos ofrece PyGithub una vez nos hemos “logueado” con dicha librería.
 
-# Descarga e instalación de la libería
+# Descarga e instalación de la librería
 
 Para poder realizar los ejemplos de este tutorial, primero debemos de instalarla. 
 

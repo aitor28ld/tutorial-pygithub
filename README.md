@@ -16,4 +16,21 @@
 
 # ¿Qué es PyGithub?
 
+PyGithub es una librería (de otras muchas) de python. Gracías a esta librería podemos administrar los recursos, que Github nos ofrece, a través de scripts de Python.
+
+Desafortunadamente, PyGithub no dispone de mucha [documentación](http://pygithub.readthedocs.io/en/latest/introduction.html#very-short-tutorial) en su web, tan sólo una pequeña introducción que nos permite listar los repositorios que tenemos creados en nuestro perfil de Github.
+
+De todas formas, su uso es intuitivo y fácil para aquel que haya trabajado minimamente con alguna librería anteriormente. Si tenemos el paquete Ipython instalado en nuestro sistema, podremos acceder a todos los métodos que nos ofrece PyGithub una vez nos hemos “logueado” con dicha librería.
+
 # Descarga e instalación de la libería
+
+Para poder realizar los ejemplos de este tutorial, primero debemos de instalarla. 
+
+La librería **PyGithub** no se encuentra en los repositorios oficiales de Debian (qué es dónde realizaré los ejemplos), por lo que debemos de descargarnos el [repositorio](https://github.com/PyGithub/PyGithub) e instalarla siguiendo los siguientes comandos:
+
+	unzip pygithub-master.zip
+	cd pygithub-master
+	su
+	python setup.py install
+
+Cuándo termine de instalar, debemos importar la librería en cualquier fichero _.py_ en el que usemos PyGithub

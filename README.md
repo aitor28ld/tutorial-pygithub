@@ -31,6 +31,7 @@ La librería **PyGithub** no se encuentra en los repositorios oficiales de Debia
 	unzip pygithub-master.zip
 	cd pygithub-master
 	su
+	apt install python-setuptools
 	python setup.py install
 
 Cuándo termine de instalar, debemos importar la librería en cualquier fichero _.py_ en el que usemos PyGithub

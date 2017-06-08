@@ -21,9 +21,9 @@
 	1. [Atributo api_status](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-api_status)
 	2. [Atributo emojis](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-emojis)
 	3. [Atributo user](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-user)
-	4. [Atributo search](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-search)
-		1. [Search users](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#search-users)
-		2. [Search repositories](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#search-repositories)
+4. [Atributo search](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#atributo-search)
+	1. [Search users](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#search-users)
+	2. [Search repositories](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#search-repositories)
 
 # ¿Qué es PyGithub?
 
@@ -103,11 +103,11 @@ Si queremos ver algún otro submétodo, deberemos seguir ese esquema, es decir:
 
 [Aquí](https://github.com/aitor28ld/tutorial-pygithub/blob/master/tutorial-get_user.py) tenemos ejemplos de uso.
 
-## Atributo search
+# Atributo search
 
 Con este atributo podemos realizar búsquedas de usuarios y repositorios ya existentes. Tenemos dos tipos:
 
-### Search users
+## Search users
 
 Este atributo en realidad es una lista actualizada con todos los usuarios actualmente registrados en Github.
 
@@ -118,7 +118,7 @@ Un ejemplo de uso podría ser:
 		for m in x.get_repos():
 			print m.name
 
-### Search repositories
+## Search repositories
 
 Al igual que pasa con el atributo anterior, este también es un a lista actualizada con todos los repositorios creados y existentes actualmente en Github.
 

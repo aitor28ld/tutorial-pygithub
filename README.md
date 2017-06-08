@@ -34,3 +34,7 @@ La librería **PyGithub** no se encuentra en los repositorios oficiales de Debia
 	python setup.py install
 
 Cuándo termine de instalar, debemos importar la librería en cualquier fichero _.py_ en el que usemos PyGithub
+
+	import github from Github
+
+Con ello, ya podemos ejecutar cualquier aplicación.

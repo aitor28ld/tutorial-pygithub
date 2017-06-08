@@ -11,10 +11,8 @@
 - Blog: [Open Binary](https://openbinary20.wordpress.com)
 
 # Índice
-
-1. [¿Qué es PyGithub?](#que-es-pygithub)
-2. [Descarga e instalación de la librería](#descarga-e-instalacion-de-la-libreria)
-
+1. [¿Qué es PyGithub?](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#qu%C3%A9-es-pygithub)
+2. [Descarga e instalación de la librería](https://github.com/aitor28ld/tutorial-pygithub/blob/master/README.md#descarga-e-instalaci%C3%B3n-de-la-liber%C3%ADa)
 
 # ¿Qué es PyGithub?
 
